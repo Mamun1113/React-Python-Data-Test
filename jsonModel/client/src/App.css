@@ -1,0 +1,52 @@
+body {
+  background: linear-gradient(to bottom, #d9f4ff, #f0d0d5);
+  font-family: Itim, Arial, sans-serif;
+  text-align: center;
+  height: 100vh;
+  margin: auto;
+}
+
+.header {
+  grid-area: header;
+  align-items: center;
+  font-size: 4rem;
+  font-family: Merienda, Arial, sans-serif;
+  font-weight: bold;
+  padding: 40px;
+}
+
+.container {
+  background: rgb(255, 255, 255);
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  margin: auto;
+}
+
+p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.table-container {
+  max-height: 600px;
+  overflow-y: auto;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+th {
+  background-color: #f2f2f2;
+}

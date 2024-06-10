@@ -1,0 +1,136 @@
+body {
+  background: linear-gradient(to bottom, #ffedd9, #d9d0f0);
+  font-family: Itim, Arial, sans-serif;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  min-height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header chart"
+    "form chart"
+    "search search"
+    "table table";
+  grid-template-columns: 2fr 2fr;
+  padding: 20px;
+}
+
+.header {
+  grid-area: header;
+  align-items: center;
+  font-size: 4rem;
+  font-family: Merienda, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.form-container {
+  grid-area: form;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: rgb(255, 255, 255);
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(198, 255, 105, 0.322);
+  margin-right: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.form input,
+.form .datepicker,
+.form button {
+  padding: 10px;
+  flex: 1;
+  border: 1px solid #d3d2ff;
+  border-radius: 10px;
+}
+
+.chart-container {
+  grid-area: chart;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.chart-container .dropdown {
+  padding: 5px;
+}
+
+.search-bar {
+  grid-area: search;
+  display: flex;
+  flex-direction: column;
+  background: rgb(255, 255, 255);
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(198, 255, 105, 0.322);
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.searchbar {
+  padding: 15px;
+  border: 1px solid #d3d2ff;
+  border-radius: 10px;
+}
+
+.table-container {
+  grid-area: table;
+  max-height: 500px;
+  overflow-y: auto;
+  background: rgb(255, 255, 255);
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(163, 105, 255, 0.322);
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.table-container th {
+  background-color: #f4f4f4;
+}
+
+p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button {
+  margin: 1px 5px;
+  border-radius: 5px;
+  border: 1px #ddd;
+  padding: 5px 10px;
+  font-family: Itim, Arial, sans-serif;
+}
+
+.button-edit {
+  background-color: rgba(0, 255, 0, 0.39);
+}
+
+.button-delete {
+  background-color: rgba(255, 0, 0, 0.308);
+}
+
+.button-addupdate {
+  background-color: rgba(0, 225, 255, 0.39);
+}
