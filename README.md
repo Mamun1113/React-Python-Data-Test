@@ -4,6 +4,11 @@
 
 This project is a web application built with React, which displays stock market data from JSON file and also a MySQL database. It features CRUD (Create, Read, Update, Delete) functionality, a search bar for filtering data, and a multi-axis chart for visualizing stock prices and volumes.
 
+JSON Model             |  SQL Model
+:-------------------------:|:-------------------------:
+![Screenshot (104)](https://github.com/Mamun1113/React-Python-MySQL-Data-Test/assets/66373332/36a47976-6a4a-4374-813f-6f0c4da4ec3b)  |  ![Screenshot (114)](https://github.com/Mamun1113/React-Python-MySQL-Data-Test/assets/66373332/a9b14302-6b0b-4aa6-a725-42a72ac8ca55)
+
+
 ## Model Variation
 
 - **JSON Model**: Retrieves data from JSON file and shows in the web application.
@@ -80,7 +85,7 @@ This project is a web application built with React, which displays stock market 
      ```
 
 5. Populate the database with data from JSON or CSV files using a script or a tool like phpMyAdmin.
-   Data files is located in: `sqlModel/datafiles/`
+   Data files are located in: `sqlModel/datafiles/`
 
 6. Configure your MySQL connection in `sqlModel/server/server.js`:
    ```javascript
@@ -174,3 +179,8 @@ This project is a web application built with React, which displays stock market 
 - Chart.js
 - React-chartjs-2
 - React-datepicker
+
+### Font
+
+- Merienda (Title Font)
+- Itim (Body Font)
