@@ -7,7 +7,9 @@ This project is a web application built with React, which displays stock market 
 JSON Model             |  SQL Model
 :-------------------------:|:-------------------------:
 ![Screenshot (104)](https://github.com/Mamun1113/React-Python-MySQL-Data-Test/assets/66373332/36a47976-6a4a-4374-813f-6f0c4da4ec3b)  |  ![Screenshot (114)](https://github.com/Mamun1113/React-Python-MySQL-Data-Test/assets/66373332/a9b14302-6b0b-4aa6-a725-42a72ac8ca55)
-
+SQL Model interactive Search             |  SQL Model interective Chart
+:-------------------------:|:-------------------------:
+![Screenshot (115)](https://github.com/Mamun1113/React-Python-MySQL-Data-Test/assets/66373332/b2d819d6-a239-4b9f-9ae8-9dce74a4f3bf)  |  ![Screenshot (116)](https://github.com/Mamun1113/React-Python-MySQL-Data-Test/assets/66373332/b9b2b594-4177-4298-8615-c33a9de6c83a)
 
 ## Model Variation
 
