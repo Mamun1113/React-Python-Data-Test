@@ -59,6 +59,16 @@ function App() {
     fetchStockMarketData();
   }, []);
 
+  // useEffect(() => {
+  //   const filteredData = stockMarketData.filter(data =>
+  //     Object.values(data).some(value =>
+  //       value.toString().toLowerCase().includes(searchTerm.toLowerCase())
+  //     )
+  //   );
+  //   setFilteredRowCount(filteredData.length);
+  //   setFilteredData(filteredData);
+  // }, [searchTerm, stockMarketData]);
+
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
@@ -124,7 +134,9 @@ function App() {
   };
 
   const filteredData = stockMarketData.filter((data) =>
-    data.trade_code.toLowerCase().includes(searchTerm.toLowerCase())
+    Object.values(data).some((value) =>
+      value.toString().toLowerCase().includes(searchTerm.toLowerCase())
+    )
   );
 
   const chartData = stockMarketData
@@ -293,7 +305,7 @@ function App() {
           <p>Search</p>
           <input
             type="text"
-            placeholder="Search by Trade Code"
+            placeholder="Type to search"
             value={searchTerm}
             onChange={handleSearch}
             className="searchbar"
@@ -315,7 +327,10 @@ function App() {
         <Line data={lineChartData} options={options} />
       </div>
       <div className="table-container">
-        <p>TABLE : Total rows {totalRows}</p>
+        <p>
+          Total rows: {totalRows} &nbsp; &nbsp; &nbsp; Filtered rows:{" "}
+          {filteredData.length}
+        </p>
         <table>
           <thead>
             <tr>
