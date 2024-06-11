@@ -185,3 +185,13 @@ SQL Model interactive Search             |  SQL Model interective Chart
 
 - Merienda (Title Font)
 - Itim (Body Font)
+
+------------------------------------
+
+### Project Learning/Challenges
+
+- React use as frontend
+- Data fetch using Python Flask
+- CRUD operations between React and MySql
+- Datatype mismatch handle for chart visualization
+
