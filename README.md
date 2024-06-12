@@ -1,5 +1,5 @@
 # Stock Market Data Application
-
+### Live Web Application Link: (https://client-cgty.onrender.com/)
 ## Overview
 
 This project is a web application built with React, which displays stock market data from JSON file and also a MySQL database. It features CRUD (Create, Read, Update, Delete) functionality, a search bar for filtering data, and a multi-axis chart for visualizing stock prices and volumes.
